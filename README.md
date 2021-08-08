@@ -19,4 +19,10 @@ Learning FastAPI AWS Lambda Deployment
 
 ```pytest```
 
+```pip install mangum```
+
 ```pip freeze > requirements.txt```
+
+
+## Note:
+1. Make Sure to keep the region of S3 bucket creation is same as that for the Lambda function creation on the AWS console since we are only using a common secret variable 'secrets.AWS_DEFAULT_REGION' for region for both of them.
